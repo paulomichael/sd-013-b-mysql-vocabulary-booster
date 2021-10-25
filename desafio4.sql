@@ -11,3 +11,4 @@ FROM
 hr.employees
 GROUP BY `Cargo`
 ORDER BY `Média Salarial` ASC, `Cargo` ASC;
+

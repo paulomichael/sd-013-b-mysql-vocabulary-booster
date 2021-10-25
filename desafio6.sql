@@ -11,3 +11,4 @@ ON jh.DEPARTMENT_ID = dpt.DEPARTMENT_ID
 INNER JOIN hr.employees empls
 ON jh.EMPLOYEE_ID = empls.EMPLOYEE_ID
 ORDER BY `Nome Completo` DESC, `Cargo` ASC;
+
