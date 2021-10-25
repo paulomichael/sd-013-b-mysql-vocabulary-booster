@@ -7,6 +7,7 @@ FROM
   w3schools.customers AS C2
 WHERE
   C1.Country = C2.Country
+  AND C1.Country <> 'Poland'
 GROUP BY
   `Nome`
 ORDER BY
