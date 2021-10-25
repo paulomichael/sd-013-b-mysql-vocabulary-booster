@@ -1,1 +1,12 @@
-WHEN MAX_SALARY >= 30001 THEN 'Altíssimo'
+SELECT hj.JOB_TITLE AS 'Cargo',
+ROUND( AVG(he.SALARY), 2) as 'Média salarial',
+CASE
+WHEN ROUND( AVG(he.SALARY), 2) BETWEEN 2000 and 5800 THEN 'Júnior'
+WHEN ROUND( AVG(he.SALARY), 2) BETWEEN 5801 and 7500 THEN 'Pleno'
+WHEN ROUND( AVG(he.SALARY), 2) BETWEEN 7501 and 10500 THEN 'Sênior'
+WHEN ROUND( AVG(he.SALARY), 2) >= 10501 THEN 'CEO'
+END AS 'Senioridade'
+FROM hr.jobs AS hj
+INNER JOIN hr.employees AS `he` ON hj.JOB_ID = he.JOB_ID
+GROUP BY JOB_TITLE
+ORDER BY `Média salarial` ASC, JOB_TITLE;
