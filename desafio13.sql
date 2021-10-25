@@ -11,4 +11,4 @@ FROM
 order_details
 WHERE
 Quantity > 80)
-ORDER BY ProductName;
+ORDER BY ProductName ASC;

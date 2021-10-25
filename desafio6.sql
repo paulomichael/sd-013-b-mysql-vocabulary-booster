@@ -10,4 +10,4 @@ INNER JOIN jobs jbs
 ON empls.JOB_ID = jbs.JOB_ID
 INNER JOIN departments dpt
 ON empls.DEPARTMENT_ID = dpt.DEPARTMENT_ID
-ORDER BY `Nome Completo` DESC, `Cargo`;
+ORDER BY `Nome Completo` DESC, `Cargo` ASC;

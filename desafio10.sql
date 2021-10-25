@@ -11,4 +11,4 @@ INNER JOIN
 order_details ods ON prods.ProductID = ods.ProductID   
 GROUP BY prods.ProductName
 HAVING ROUND(AVG(ods.Quantity), 2) > 20
-ORDER BY `Média` , `Produto`;
+ORDER BY `Média` ASC, `Produto` ASC;

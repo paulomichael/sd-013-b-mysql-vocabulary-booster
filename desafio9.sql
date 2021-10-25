@@ -7,4 +7,4 @@ FROM employees empls
 INNER JOIN orders ords
 ON empls.EmployeeID = ords.EmployeeID
 GROUP BY empls.EmployeeID
-ORDER BY `Total de pedidos`;
+ORDER BY `Total de pedidos` ASC;

@@ -6,4 +6,4 @@ HIRE_DATE AS 'Data de início',
 SALARY AS 'Salário'
 FROM employees
 WHERE MONTH(HIRE_DATE) IN (1, 2, 3)
-ORDER BY `Nome Completo`, HIRE_DATE;
+ORDER BY `Nome Completo` ASC, HIRE_DATE ASC;
