@@ -1,7 +1,7 @@
 USE hr;
 DELIMITER $$
 
-CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionarios(email VARCHAR(100))
+CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(email VARCHAR(100))
 RETURNS INT READS SQL DATA
 BEGIN
     DECLARE total_empregos INT;
@@ -13,3 +13,4 @@ BEGIN
 END $$
 
 DELIMITER ;
+
