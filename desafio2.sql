@@ -10,4 +10,3 @@ FROM
     hr.jobs
 ORDER BY `Cargo`;
 
--- A logica foi refeita para se utilizar BETWEEN dica de refatoramento obtida na monitoria de projeto
