@@ -8,7 +8,7 @@ INNER JOIN hr.job_history as jobs_history
 ON employee.EMPLOYEE_ID = jobs_history.EMPLOYEE_ID
 
 INNER JOIN hr.departments AS Departamentos
-ON employee.DEPARTMENT_ID = Departamentos.DEPARTMENT_ID
+ON jobs_history.DEPARTMENT_ID = Departamentos.DEPARTMENT_ID
 
 INNER JOIN hr.jobs AS Empregos
 ON employee.JOB_ID = Empregos.JOB_ID
