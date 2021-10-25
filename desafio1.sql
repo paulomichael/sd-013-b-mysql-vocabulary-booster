@@ -1,1 +1,1 @@
-SELECT COUNTRY_NAME AS Pais, IF(REGION_ID = 1, 'Incluido', 'Fora') as 'Status Inclusão' FROM hr.countries;
+SELECT COUNTRY_NAME AS Pais, IF(REGION_ID = 1, 'incluído', 'não incluído') as 'Status Inclusão' FROM hr.countries;
