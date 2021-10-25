@@ -1,2 +1,10 @@
-SELECT COUNT(DISTINCT job_id)
-FROM hr.employees;
+SELECT * FROM hr.regions WHERE REGION_NAME = "Europe";
+SELECT * FROM hr.countries;
+
+SELECT 
+	COUNTRY_NAME AS 'País',
+    CASE
+		WHEN REGION_ID IN(SELECT REGION_ID FROM hr.regions WHERE REGION_NAME = "Europe") THEN 'incluído'
+        ELSE 'não incluído'
+        END AS 'Status Inclusão'
+FROM hr.countries;
