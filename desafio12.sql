@@ -7,7 +7,10 @@ SELECT
     E2.PHONE_NUMBER AS `Telefone funcionário 2`
 FROM
     hr.employees AS E1
-    JOIN hr.employees AS E2
-    WHERE E2.JOB_ID = E1.JOB_ID AND E1.EMPLOYEE_ID <> E2.EMPLOYEE_ID
-    ORDER BY `Nome completo funcionário 1`, `Nome completo funcionário 2`;
+        JOIN
+    hr.employees AS E2
+WHERE
+    E2.JOB_ID = E1.JOB_ID
+        AND E1.EMPLOYEE_ID <> E2.EMPLOYEE_ID
+ORDER BY `Nome completo funcionário 1` , `Nome completo funcionário 2`;
     

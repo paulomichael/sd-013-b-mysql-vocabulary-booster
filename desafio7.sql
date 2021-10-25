@@ -1,10 +1,13 @@
 SELECT 
-    UPPER(CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME)) AS `Nome completo`,
-    JH.START_DATE AS `Data de início`,
-    E.SALARY AS `Salário`
+    C.ContactName AS `Nome de contato`,
+    S.ShipperName AS `Empresa que fez o envio`,
+    O.OrderDate AS `Data do pedido`
 FROM
-    hr.employees as E
-    JOIN hr.job_history AS JH
-    ON JH.EMPLOYEE_ID = E.EMPLOYEE_ID
-    WHERE MONTH(JH.START_DATE) BETWEEN 1 and 3     
-    ORDER BY `Nome completo`, `Data de início`;
+    w3schools.orders AS O
+        JOIN
+    w3schools.shippers AS S ON S.ShipperID = O.ShipperID
+        JOIN
+    w3schools.customers AS C ON C.CustomerID = O.CustomerID
+WHERE
+    O.ShipperID IN (1 , 2)
+ORDER BY C.ContactName , S.ShipperName , O.Orderdate;

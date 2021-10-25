@@ -6,6 +6,6 @@ FROM
     w3schools.customers AS C1
         JOIN
     w3schools.customers AS C2 ON C1.Country = C2.Country
-GROUP BY C1.ContactName, C1.Country
+GROUP BY C1.ContactName , C1.Country
 HAVING `Número de compatriotas` > 0
 ORDER BY Nome;

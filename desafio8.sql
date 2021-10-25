@@ -9,5 +9,5 @@ FROM
         JOIN
     w3schools.customers AS C ON C.CustomerID = O.CustomerID
 WHERE
-    O.ShipperID in (1, 2)
-ORDER BY C.ContactName, S.ShipperName, O.Orderdate;
+    O.ShipperID IN (1 , 2)
+ORDER BY C.ContactName , S.ShipperName , O.Orderdate;
