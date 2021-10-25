@@ -7,4 +7,3 @@ FROM
   WHERE OD.Quantity > 80
 ORDER BY
   `Produto`;
-  
