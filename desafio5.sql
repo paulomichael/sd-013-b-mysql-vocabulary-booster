@@ -8,3 +8,4 @@ SELECT
 FROM jobs
 GROUP BY `Cargo`
 ORDER BY `Variação Salarial`, `Cargo`;
+

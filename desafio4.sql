@@ -17,3 +17,4 @@ ON
     jbs.JOB_ID = empls.JOB_ID
 GROUP BY `Cargo`
 ORDER BY `Média Salarial` , `Cargo`;
+
