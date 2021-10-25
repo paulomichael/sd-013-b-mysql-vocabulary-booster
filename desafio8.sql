@@ -1,5 +1,5 @@
 SELECT 
-custs.ContactName AS 'Nome de Contato',
+custs.ContactName AS 'Nome de contato',
 ships.ShipperName AS 'Empresa que fez o envio',
 ords.OrderDate AS 'Data do pedido'
 FROM
@@ -10,4 +10,4 @@ INNER JOIN
 w3schools.shippers ships ON ords.ShipperID = ships.ShipperID
 WHERE
 ships.ShipperID IN (1 , 2)
-ORDER BY `Nome de Contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;
+ORDER BY `Nome de contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;
