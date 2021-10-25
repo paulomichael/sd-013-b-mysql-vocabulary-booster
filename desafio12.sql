@@ -14,3 +14,4 @@ WHERE
     empls1.JOB_ID = empls2.JOB_ID
         AND CONCAT(empls1.FIRST_NAME, ' ', empls1.LAST_NAME) <> CONCAT(empls2.FIRST_NAME, ' ', empls2.LAST_NAME)
 ORDER BY `Nome completo funcionário 1` , `Nome completo funcionário 2`;
+
