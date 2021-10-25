@@ -11,4 +11,4 @@ FROM
 WHERE
     S.ShipperName = 'Speedy Express'
         OR S.ShipperName = 'United Package'
-	ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
+ORDER BY `Nome de contato` , `Empresa que fez o envio` , `Data do pedido`;
