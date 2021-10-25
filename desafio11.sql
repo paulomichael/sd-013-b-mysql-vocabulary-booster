@@ -11,4 +11,3 @@ GROUP BY `Nome`
 ORDER BY
 `Nome` ASC,
 `País` ASC;
-    
