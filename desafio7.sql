@@ -5,7 +5,7 @@ SELECT
 FROM
     hr.employees AS e
         INNER JOIN
-    hr.job_history AS jh ON e.EMPLOYEE_ID = jh.EMPLOYEE_ID
+    hr.job_history AS jh ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID
 WHERE
     MONTH(jh.START_DATE) IN (01 , 02, 03)
-ORDER BY Nome Completo , Data de início;
+ORDER BY `Nome completo` , `Data de início`;
