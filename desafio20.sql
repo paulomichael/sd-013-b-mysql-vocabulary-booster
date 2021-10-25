@@ -4,8 +4,8 @@ CREATE PROCEDURE exibir_historico_completo_por_funcionario(IN employeeEmail VARC
 BEGIN
 SELECT 
     CONCAT(E.FIRST_NAME, ' ', E.LAST_NAME) AS `Nome completo`,
-     D.DEPARTMENT_NAME AS Departamento,
-     J.JOB_TITLE AS Cargo
+      D.DEPARTMENT_NAME AS Departamento,
+      J.JOB_TITLE AS Cargo
 FROM
     hr.job_history as JH
     JOIN hr.employees AS E
