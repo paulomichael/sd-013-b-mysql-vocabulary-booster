@@ -8,7 +8,4 @@ FROM
         INNER JOIN
     w3schools.employees e ON o.EmployeeID = e.EmployeeID
 WHERE
-    c.CustomerName = 'Nome completo';
-
-    --
-    
+    c.CustomerName = 'Nome completo';    --
