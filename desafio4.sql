@@ -1,0 +1,1 @@
+WHEN MAX_SALARY >= 30001 THEN 'Altíssimo'
