@@ -11,4 +11,3 @@ FROM
 WHERE
     S.ShipperID IN (1 , 2)
 ORDER BY C.ContactName , S.ShipperName , O.OrderDate;
-
