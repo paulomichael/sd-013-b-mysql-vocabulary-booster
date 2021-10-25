@@ -6,6 +6,3 @@ SELECT
 FROM
     hr.jobs
 ORDER BY `Variação Salarial`, `Cargo`;
-
-
-
