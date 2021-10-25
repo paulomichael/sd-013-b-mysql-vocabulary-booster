@@ -7,5 +7,7 @@ CASE
     WHEN MAX_SALARY >= 20001 AND MAX_SALARY <= 30000 THEN 'Alto'
     WHEN MAX_SALARY >= 30001 THEN 'Altíssimo'
 END AS 'Nível'
-FROM jobs;
+FROM jobs
+ORDER BY Cargo;
+
 
