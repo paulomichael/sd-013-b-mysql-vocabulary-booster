@@ -4,4 +4,4 @@ AS "Diferença" FROM employees AS t1
 INNER JOIN jobs AS t2
 ON t1.JOB_ID = t2.JOB_ID
 GROUP BY t1.JOB_ID 
-ORDER BY Diferença;
+ORDER BY Diferença, Cargo;
