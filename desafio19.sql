@@ -1,5 +1,3 @@
-use hr;
-
 DELIMITER $$;
 
 CREATE FUNCTION exibir_quantidade_pessoas_contratadas_por_mes_e_ano (in_month INT, in_year INT)
@@ -9,7 +7,7 @@ DECLARE hired_quantity INT;
 SELECT 
 COUNT(*)
 FROM
-employees
+hr.employees
 WHERE
 MONTH(HIRE_DATE) = in_month
 AND YEAR(HIRE_DATE) = in_year INTO hired_quantity;
