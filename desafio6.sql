@@ -3,4 +3,4 @@ E.HIRE_DATE AS `Data de início no cargo`, E.DEPARTMENT_ID AS Departamento
 FROM employees AS E
 INNER JOIN jobs AS J
 ON E.JOB_ID = J.JOB_ID
-ORDER BY `Nome Completo` DESC, Cargo;  
+ORDER BY `Nome Completo` DESC, Cargo;
