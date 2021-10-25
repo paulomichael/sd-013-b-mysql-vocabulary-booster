@@ -6,4 +6,3 @@ SELECT
 FROM
     hr.countries
 ORDER BY country_name;
-        
