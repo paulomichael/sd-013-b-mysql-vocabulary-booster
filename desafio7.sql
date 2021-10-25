@@ -7,3 +7,5 @@ FROM
 WHERE
     MONTH(HIRE_DATE) BETWEEN 1 AND 3
 ORDER BY CONCAT(FIRST_NAME, ' ', LAST_NAME) DESC , HIRE_DATE
+
+--marked to commit again due to a github glitch
