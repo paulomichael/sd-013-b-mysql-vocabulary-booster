@@ -18,3 +18,4 @@ GROUP BY
 ORDER BY
   AVG(e.salary),
   job_title;
+  
