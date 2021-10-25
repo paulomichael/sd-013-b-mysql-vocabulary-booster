@@ -8,4 +8,3 @@ FROM
         INNER JOIN
     hr.employees AS E ON E.JOB_ID = J.JOB_ID
     ORDER BY `Variação Salarial`, `Cargo`;
-    
