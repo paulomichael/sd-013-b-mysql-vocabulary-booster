@@ -4,5 +4,5 @@ IF(region_id = 1,
 'incluido',
 'não incluido') AS `Status Inclusão`
 FROM
-	hr.countries
+hr.countries
 ORDER BY País ASC;
