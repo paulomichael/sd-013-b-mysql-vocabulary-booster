@@ -2,7 +2,7 @@ const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
 const Importer = require('mysql-import');
 
-describe('Desafios iniciais', () => {
+describe.skip('Desafios iniciais', () => {
   let sequelize;
 
   beforeAll(async () => {
@@ -47,7 +47,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only('10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
+  describe('10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
     it('Verifica o desafio 10', async () => {
       const challengeQuery = readFileSync('desafio10.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult10');
