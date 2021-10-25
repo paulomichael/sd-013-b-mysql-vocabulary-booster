@@ -7,5 +7,4 @@ FOR EACH ROW
 BEGIN
   SET NEW.orderDate = NOW();
 END $$
-
 DELIMITER ;
