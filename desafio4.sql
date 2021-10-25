@@ -13,5 +13,3 @@ THEN 'Júnior'
     ON J.JOB_ID = E.JOB_ID
     GROUP BY J.JOB_TITLE
     ORDER BY AVG(E.SALARY), `Cargo`;
-
-    -- Ideia dada na monitoria junto com a revisão do codigo do Rafael Nery e João
