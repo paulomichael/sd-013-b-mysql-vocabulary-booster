@@ -3,9 +3,8 @@ DELIMITER $$
 CREATE FUNCTION buscar_quantidade_de_empregos_por_funcionario(EMAIL VARCHAR(100))
 RETURNS INT READS SQL DATA
 BEGIN
-	DECLARE total_empregos INT;
-	SELECT
-    COUNT(t3.JOB_ID)
+DECLARE total_empregos INT;
+SELECT COUNT(t3.JOB_ID)
 FROM
     hr.employees AS t1
         INNER JOIN
