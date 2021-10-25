@@ -5,7 +5,7 @@ SELECT JOB_TITLE,
         WHEN MAX_SALARY > 20000 AND MAX_SALARY <= 30000 THEN 'Alto'
         WHEN MAX_SALARY > 30000 THEN 'Altíssimo'
     ELSE 'Não Classificado'
-END AS 'Nível', MAX_SALARY
+END AS 'Nível'
 FROM hr.jobs
 ORDER BY JOB_TITLE
 ;
