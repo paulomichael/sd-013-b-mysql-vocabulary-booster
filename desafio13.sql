@@ -7,4 +7,3 @@ ON prds.Product_ID = ods.Product_ID
 WHERE
 ods.Quantity > 80
 ORDER BY `Produto` ASC;
-
