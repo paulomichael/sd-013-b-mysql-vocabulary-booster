@@ -7,4 +7,4 @@ CASE
     ELSE 'Não Especificado'
 END AS 'Nível'
 FROM hr.jobs
-	ORDER BY JOB_TITLE;
+ORDER BY JOB_TITLE;
