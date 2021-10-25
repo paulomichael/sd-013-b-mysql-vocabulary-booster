@@ -1,3 +1,4 @@
+-- 2 - Exiba os cargos com seu nível de renumeração associado, com base no salário máximo do cargo
 SELECT JOB_TITLE AS 'Cargo',
 CASE 
   	WHEN MAX_SALARY BETWEEN 5000 AND 10000 THEN 'Baixo'
