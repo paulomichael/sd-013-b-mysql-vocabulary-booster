@@ -7,7 +7,7 @@ FROM hr.job_history AS JH
 JOIN hr.employees AS EM
 JOIN hr.jobs AS JO 
 JOIN hr.departments AS DE
- ON  EM.`EMPLOYEE_ID` = JH.`EMPLOYEE_ID` 
- AND  DE.`DEPARTMENT_ID` = JH.`DEPARTMENT_ID`
- AND  JH.`JOB_ID` = JO.`JOB_ID`
+ON  EM.`EMPLOYEE_ID` = JH.`EMPLOYEE_ID` 
+AND  DE.`DEPARTMENT_ID` = JH.`DEPARTMENT_ID`
+AND  JH.`JOB_ID` = JO.`JOB_ID`
 ORDER BY `Nome completo` DESC, `Cargo`;
