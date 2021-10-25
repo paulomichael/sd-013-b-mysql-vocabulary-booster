@@ -5,10 +5,7 @@ SELECT
     de.DEPARTMENT_NAME AS `Departamento`
 FROM
     hr.employees AS em 
-	JOIN
-    hr.job_history AS joh ON em.employee_id = joh.employee_id
-    JOIN
-    hr.jobs AS jo ON em.job_id = jo.job_id
-	JOIN
-    hr.departments AS de ON joh.DEPARTMENT_ID = de.DEPARTMENT_ID
-ORDER BY `Nome Completo` DESC , `Data de início do cargo`;
+JOIN hr.job_history AS joh ON em.employee_id = joh.employee_id
+JOIN hr.jobs AS jo ON em.job_id = jo.job_id
+JOIN hr.departments AS de ON joh.DEPARTMENT_ID = de.DEPARTMENT_ID
+ORDER BY `Nome Completo` DESC, `Data de início do cargo`;

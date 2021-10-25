@@ -4,4 +4,3 @@ CASE
     ELSE 'incluído'
 END AS 'Status Inclusão'
 FROM hr.countries;
-
