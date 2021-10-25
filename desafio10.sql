@@ -9,4 +9,4 @@ FROM
     w3schools.order_details AS OD ON OD.ProductID = P.ProductID
 GROUP BY `Produto`
 HAVING `Média` > 20
-ORDER BY `Média`;
+ORDER BY `Média`, `Produto`;
