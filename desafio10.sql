@@ -7,4 +7,3 @@ INNER JOIN w3schools.order_details AS od ON p.ProductID = od.ProductID
 GROUP BY `Produto`
 HAVING `Média` > 20.00
 ORDER BY `Média`, `Produto`;
- 
