@@ -11,4 +11,4 @@ FROM
     hr.departments AS d ON d.DEPARTMENT_ID = e.DEPARTMENT_ID
         JOIN
     hr.job_history AS jh ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID
-ORDER BY `Nome completo` DESC , Cargo;
+ORDER BY `Nome completo` DESC , `Cargo`;
