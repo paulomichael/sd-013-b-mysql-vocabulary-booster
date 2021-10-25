@@ -6,9 +6,9 @@ SELECT
 FROM
   hr.employees AS E
     JOIN
-  hr.jobs AS J ON E.JOB_ID = J.JOB_ID
-    JOIN
   hr.job_history AS JH ON E.EMPLOYEE_ID = JH.EMPLOYEE_ID
     JOIN
+  hr.jobs AS J ON JH.JOB_ID = J.JOB_ID
+    JOIN
   hr.departments AS D ON JH.DEPARTMENT_ID = D.DEPARTMENT_ID
-ORDER BY `Nome completo` DESC, `Cargo`;
+ORDER BY `Nome completo` DESC, `Cargo` ASC;
