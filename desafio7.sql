@@ -5,4 +5,3 @@ SELECT
     FROM hr.employees AS emp
     INNER JOIN hr.job_history AS job_hist ON job_hist.JOB_ID = emp.JOB_ID
     ORDER BY `Nome completo` ASC, job_hist.START_DATE ASC;
-    
