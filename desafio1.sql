@@ -1,5 +1,5 @@
 SELECT 
-    C.COUNTRY_NAME,
+    C.COUNTRY_NAME AS 'País',
     IF(R.REGION_ID = 1,
         'incluído',
         'não incluído') AS 'Status Inclusão'
@@ -8,5 +8,7 @@ FROM
         INNER JOIN
     hr.regions AS R
 WHERE
-    C.REGION_ID = R.REGION_ID;
+    C.REGION_ID = R.REGION_ID
+    ORDER BY País;
+
   
