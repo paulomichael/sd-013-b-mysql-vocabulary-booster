@@ -8,5 +8,5 @@ FROM
   INNER JOIN w3schools.shippers AS S ON S.ShipperName IN('Speedy Express', 'United Package') AND S.ShipperID = O.ShipperID
 ORDER BY 
   `Nome de contato` ASC,
-  `Empresa que fez o envio` DESC,
+  `Empresa que fez o envio` ASC,
   `Data do pedido` ASC;
