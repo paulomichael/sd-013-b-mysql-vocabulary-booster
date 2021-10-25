@@ -12,4 +12,4 @@ hr.employees as empls
 INNER JOIN hr.jobs jbs
 ON empls.JOB_ID = jbs.JOB_ID
 GROUP BY `Cargo`
-ORDER BY `Média Salarial` ASC, `Cargo` ASC;
+ORDER BY `Média Salarial` ASC, `Cargo` ASC;--

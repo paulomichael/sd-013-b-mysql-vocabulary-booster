@@ -6,4 +6,4 @@ INNER JOIN w3schools.order_details ods
 ON prds.ProductID = ods.ProductID
 WHERE
 ods.Quantity > 80
-ORDER BY `Produto` ASC;
+ORDER BY `Produto` ASC;--
