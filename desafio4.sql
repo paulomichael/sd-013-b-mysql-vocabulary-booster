@@ -6,7 +6,7 @@ SELECT
         WHEN AVG(employees_table.SALARY) BETWEEN 5801 AND 7500 THEN 'Pleno'
         WHEN AVG(employees_table.SALARY) BETWEEN 7501 AND 10500 THEN 'Sênior'
         WHEN AVG(employees_table.SALARY) > 10500 THEN 'CEO'
-    END AS Senioridade
+    END AS `Senioridade`
 FROM
     hr.employees AS employees_table
         INNER JOIN
