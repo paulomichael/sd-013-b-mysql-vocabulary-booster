@@ -1,14 +1,11 @@
 use w3schools;
 
 SELECT 
-ProductName AS 'Produto', Price AS 'Preço'
+prds.ProductName AS 'Produto', Price AS 'Preço'
 FROM
-products
+products prds
+INNER JOIN order_details ods
+ON prds.Product_ID = ods.Product_ID
 WHERE
-ProductID IN (SELECT 
-ProductID
-FROM
-order_details
-WHERE
-Quantity > 80)
-ORDER BY ProductName ASC;
+ods.Quantity > 80
+ORDER BY `Produto` ASC;

@@ -11,5 +11,5 @@ orders ords ON custs.CustomerID = ords.CustomerID
 INNER JOIN
 shippers ships ON ords.ShipperID = ships.ShipperID
 WHERE
-ships.ShipperName IN ('Speedy Express' , 'United Package')
+ships.ShipperID IN (1 , 2)
 ORDER BY `Nome de Contato` ASC, `Empresa que fez o envio` ASC, `Data do pedido` ASC;
