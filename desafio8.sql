@@ -1,4 +1,3 @@
-USE w3schools;
 SELECT t2.ContactName AS "Nome de contato", t3.ShipperName AS "Empresa que fez o envio", t1.OrderDate AS "Data do pedido"
 FROM orders AS t1
 INNER JOIN customers AS t2
