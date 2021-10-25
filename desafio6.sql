@@ -6,7 +6,7 @@ SELECT
 FROM
     hr.jobs AS J
         INNER JOIN
-    hr.job_history AS JH ON JH.job_id = j.job_id
+    hr.job_history AS JH ON JH.job_id = J.job_id
         INNER JOIN
     hr.employees AS E ON E.employee_id = JH.employee_id
         INNER JOIN
