@@ -1,7 +1,3 @@
-select * from hr.employees;
-
-select * from hr.job_history;
-
 SELECT 
     CONCAT(emp.FIRST_NAME, ' ', emp.LAST_NAME) AS `Nome completo`,
     jobs.JOB_TITLE AS Cargo,
