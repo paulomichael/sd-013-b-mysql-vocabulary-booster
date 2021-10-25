@@ -9,4 +9,3 @@ FROM
 ORDER BY 
   `Nome completo` ASC,
   `Data de início` ASC;
-  
