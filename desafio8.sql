@@ -9,3 +9,4 @@ INNER JOIN customers CU
 ON CU.CustomerID = ORD.CustomerID
 WHERE SH.ShipperName = 'Speedy Express' OR SH.ShipperName = 'United Package'
 ORDER BY `Nome de contato`, `Empresa que fez o envio`, `Data do pedido`;
+
