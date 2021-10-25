@@ -5,3 +5,4 @@ SELECT COUNTRY_NAME AS 'País',
         END AS 'Status Inclusão'
  FROM hr.countries
  ORDER BY País;
+ 
