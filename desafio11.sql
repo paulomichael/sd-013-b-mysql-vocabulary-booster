@@ -8,5 +8,5 @@ FROM
 WHERE
     C1.Country = C2.Country
         AND C1.ContactName <> C2.ContactName
-GROUP BY C1.ContactName
+GROUP BY `Nome`
 ORDER BY C1.ContactName;
