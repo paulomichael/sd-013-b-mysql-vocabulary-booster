@@ -12,4 +12,3 @@ FROM
         INNER JOIN
     hr.departments AS depart ON depart.DEPARTMENT_ID = job_hist.DEPARTMENT_ID
     ORDER BY `Nome completo` DESC, `Cargo` ASC;
-    
