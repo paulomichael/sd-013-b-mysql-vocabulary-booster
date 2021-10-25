@@ -10,7 +10,7 @@ WHERE
 a.country = b.country
 AND a.customerid <> b.customerid
 GROUP BY
-	`Nome`
+`Nome`
 ORDER BY
 `Nome` ASC,
 `País` ASC;
