@@ -9,4 +9,3 @@ WHERE cts1.Country = cts2.Country
 GROUP BY cts1.ContactName
 HAVING `Número de compatriotas` <> 0
 ORDER BY `Nome`;
-

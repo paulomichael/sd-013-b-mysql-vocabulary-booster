@@ -12,4 +12,3 @@ order_details
 WHERE
 Quantity > 80)
 ORDER BY ProductName;
-

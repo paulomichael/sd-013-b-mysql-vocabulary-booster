@@ -7,4 +7,3 @@ SALARY AS 'Salário'
 FROM employees
 WHERE MONTH(HIRE_DATE) IN (1, 2, 3)
 ORDER BY `Nome Completo`, HIRE_DATE;
-

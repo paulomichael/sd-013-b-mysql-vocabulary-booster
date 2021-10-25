@@ -14,4 +14,3 @@ job_history AS jh
 INNER JOIN
 employees AS empls ON jh.EMPLOYEE_ID = empls.EMPLOYEE_ID
 ORDER BY `Nome completo`, `Anos trabalhados`;
-

@@ -5,4 +5,3 @@ UNION
 (SELECT Country FROM suppliers)
 ORDER BY `País`
 LIMIT 5;
-
