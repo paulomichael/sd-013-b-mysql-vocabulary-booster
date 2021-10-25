@@ -7,6 +7,6 @@ FROM
     w3schools.customers AS cus2
 WHERE
     cus1.Country = cus2.Country
-GROUP BY Nome
+GROUP BY Nome, País
 HAVING `Número de compatriotas` > 0
 ORDER BY Nome;
