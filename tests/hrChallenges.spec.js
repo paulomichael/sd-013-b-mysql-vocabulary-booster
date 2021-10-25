@@ -2,7 +2,7 @@ const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
 const Importer = require('mysql-import');
 
-describe('Desafios iniciais', () => {
+describe.skip('Desafios iniciais', () => {
   let sequelize;
 
   beforeAll(async () => {
@@ -92,7 +92,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only('12 - Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**', () => {
+  describe('12 - Faça um relatório que lista todas as pessoas funcionárias **que possuem o mesmo cargo**', () => {
     it('Verifica o desafio 12', async () => {
       const challengeQuery = readFileSync('desafio12.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult12');
