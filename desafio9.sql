@@ -4,6 +4,6 @@ SELECT
 FROM
     w3schools.employees AS E
         INNER JOIN
-    w3schools.orders AS O
-GROUP BY CONCAT(E.FirstName, ' ', E.LastName)
-ORDER BY COUNT(E.EmployeeID);
+    w3schools.orders AS O ON O.employeeID = E.employeeID
+GROUP BY `Nome Completo`
+ORDER BY `Total de pedidos`;
