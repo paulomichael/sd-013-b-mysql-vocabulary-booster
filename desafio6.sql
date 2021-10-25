@@ -6,6 +6,8 @@ SELECT
 FROM
     hr.employees AS e
         JOIN
+	hr.job_history AS jh ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID
+		JOIN
     hr.jobs AS j ON e.JOB_ID = j.JOB_ID
         JOIN
     hr.departments AS d ON d.DEPARTMENT_ID = e.DEPARTMENT_ID
