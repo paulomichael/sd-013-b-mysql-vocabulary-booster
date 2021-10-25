@@ -18,4 +18,3 @@ FROM
 END $$
 
 DELIMITER ;
-

@@ -10,4 +10,4 @@ WHERE
     MONTH(t1.START_DATE) = 01
         OR MONTH(t1.START_DATE) = 02
         OR MONTH(t1.START_DATE) = 03
-ORDER BY `Nome completo` , `Data de início`; 
+ORDER BY `Nome completo` , `Data de início`;
