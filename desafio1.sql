@@ -5,5 +5,3 @@ FROM regions R
 INNER JOIN countries C
 ON R.REGION_ID = C.REGION_ID
 ORDER BY País;
-
-
