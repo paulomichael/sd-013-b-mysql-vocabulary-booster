@@ -1,6 +1,6 @@
 SELECT
 product.productName AS 'Produto',
-product.price AS 'Price'
+product.price AS 'Preço'
 FROM
 w3schools.products AS product
 WHERE product.productID
