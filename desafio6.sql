@@ -6,10 +6,10 @@ DP.DEPARTMENT_NAME AS 'Departamento'
 FROM
 hr.employees E
 INNER JOIN 
-	hr.job_history JH ON JH.EMPLOYEE_ID = E.EMPLOYEE_ID
+hr.job_history JH ON JH.EMPLOYEE_ID = E.EMPLOYEE_ID
 INNER JOIN 
-	hr.jobs J ON J.JOB_ID = JH.JOB_ID
+hr.jobs J ON J.JOB_ID = JH.JOB_ID
 INNER JOIN
-    hr.departments DP ON DP.DEPARTMENT_ID = JH.DEPARTMENT_ID
+hr.departments DP ON DP.DEPARTMENT_ID = JH.DEPARTMENT_ID
 ORDER BY `Nome Completo` DESC, Cargo ASC
 ;
