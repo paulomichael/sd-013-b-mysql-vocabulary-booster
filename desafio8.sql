@@ -1,4 +1,6 @@
-SELECT t1.*, t2.*, t3.* FROM orders AS t1
+USE w3schools;
+SELECT t2.ContactName AS "Nome de contato", t3.ShipperName AS "Empresa que fez o envio", t1.OrderDate AS "Data do pedido"
+FROM orders AS t1
 INNER JOIN customers AS t2
 ON t1.CustomerID = t2.CustomerID
 INNER JOIN shippers AS t3
