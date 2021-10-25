@@ -8,4 +8,3 @@ GROUP BY
   `Nome completo`
 ORDER BY
   `Total de pedidos` ;
-  

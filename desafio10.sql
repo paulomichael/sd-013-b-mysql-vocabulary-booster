@@ -13,4 +13,3 @@ HAVING
 ORDER BY
   `Média` ,
   `Produto` ;
-  

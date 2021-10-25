@@ -1,7 +1,6 @@
 SELECT 
   upper(CONCAT(Emp.FIRST_NAME, ' ', Emp.LAST_NAME)) AS `Nome completo`,
- 
- /*http://blog.tiagopassos.com/2010/08/31/converter-de-maiusculas-para-minusculas-e-vice-versa-com-o-mysql/ */ his.START_DATE AS `Data de início`,
+  /*http://blog.tiagopassos.com/2010/08/31/converter-de-maiusculas-para-minusculas-e-vice-versa-com-o-mysql/ */ his.START_DATE AS `Data de início`,
   Emp.SALARY AS `Salário`
 FROM 
   hr.employees AS Emp
