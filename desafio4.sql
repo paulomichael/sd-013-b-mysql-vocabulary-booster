@@ -11,5 +11,5 @@ FROM
     hr.jobs AS JOBS
         INNER JOIN
     hr.employees AS EMPLOYEES ON JOBS.JOB_ID = EMPLOYEES.JOB_ID
-GROUP BY Cargo
-ORDER BY 'Média salarial' , Cargo;
+GROUP BY JOBS.job_title
+ORDER BY 'Média salarial' ASC , Cargo ASC;
