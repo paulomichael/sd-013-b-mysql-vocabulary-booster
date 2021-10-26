@@ -83,7 +83,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe('7 - Faça um relatório que mostra o **histórico de cargos das pessoas empregadas** que iniciaram seus cargos nos meses de janeiro, fevereiro ou março', () => {
+  describe.only('7 - Faça um relatório que mostra o **histórico de cargos das pessoas empregadas** que iniciaram seus cargos nos meses de janeiro, fevereiro ou março', () => {
     it('Verifica o desafio 7', async () => {
       const challengeQuery = readFileSync('desafio7.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult7');
@@ -160,7 +160,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only('20 - Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico', () => {
+  describe('20 - Toda pessoa funcionária no banco `hr` possui um histórico completo de cargos. Logo, crie uma procedure chamada `exibir_historico_completo_por_funcionario` que, dado o e-mail de uma pessoa funcionária, retorna todos os cargos em seu histórico', () => {
     it('Verifica o desafio 20', async () => {
       const challengeQuery = readFileSync('desafio20.sql', 'utf8').trim();
       const createProcedureQuery = /CREATE PROCEDURE.*END/si.exec(challengeQuery)[0];
