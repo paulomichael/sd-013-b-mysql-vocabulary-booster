@@ -10,5 +10,3 @@ FROM
         INNER JOIN
     hr.departments d ON d.DEPARTMENT_ID = e.DEPARTMENT_ID
 ORDER BY CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) DESC , j.JOB_TITLE;
-
---marked to commit again due to a github glitch
