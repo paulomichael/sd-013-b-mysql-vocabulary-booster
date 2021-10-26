@@ -11,4 +11,4 @@ END $$;
 
 DELIMITER ;
 
-CALL buscar_media_por_cargo('Programmer');--
+CALL buscar_media_por_cargo('Programmer');

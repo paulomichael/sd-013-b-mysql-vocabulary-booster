@@ -18,4 +18,4 @@ WHERE empls.EMAIL = email
 ORDER BY `Departamento`, `Cargo`;
 END &&;
 
-DELIMITER ;--
+DELIMITER ;
