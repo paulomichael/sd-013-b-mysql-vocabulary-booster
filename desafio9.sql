@@ -1,4 +1,4 @@
-SELECT CONCAT(t1.FirstName, ' ', t1.LastName) AS 'Nome Completo',COUNT(t1.employeeID) AS `Total de pedidos` from employees AS t1
+SELECT CONCAT(t1.FirstName, ' ', t1.LastName) AS 'Nome completo',COUNT(t1.employeeID) AS `Total de pedidos` from employees AS t1
 INNER JOIN orders as t2 
 ON t1.employeeID = t2.employeeID
 WHERE EXISTS(
