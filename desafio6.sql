@@ -5,6 +5,6 @@ SELECT CONCAT(emp.FIRST_NAME,' ', emp.LAST_NAME) AS 'Nome completo',
 FROM `hr`.`employees` AS `emp`
 INNER JOIN `hr`.`jobs` AS `jb`
 ON emp.JOB_ID = jb.JOB_ID
-INNER JOIN departments AS `dep`
+INNER JOIN `hr`.`departments` AS `dep`
 ON dep.DEPARTMENT_ID = emp.DEPARTMENT_ID
 ORDER BY CONCAT(emp.FIRST_NAME,' ', emp.LAST_NAME) DESC, jb.JOB_TITLE;
