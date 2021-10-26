@@ -9,4 +9,3 @@ WHERE
     c1.Country = c2.Country
 GROUP BY c1.ContactName , c1.Country
 ORDER BY `Nome`;
-
