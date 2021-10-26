@@ -9,3 +9,4 @@ SELECT ROUND(AVG(E.SALARY), 2) AS `Média salarial` FROM hr.employees AS E
 END $$
 
 DELIMITER ;
+
