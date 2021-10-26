@@ -4,11 +4,11 @@ SELECT
     jh.start_date AS `Data de início do cargo`,
     d.department_name AS `Departamento`
 FROM
-    hr.employees AS e
-        JOIN
-    hr.job_history AS jh ON e.employee_id = jh.employee_id
-        JOIN
-    hr.jobs AS j ON j.job_id = jh.job_id
-        JOIN
-    hr.departments AS d ON jh.department_id = d.department_id
+    hr.job_history as jh
+    join
+    hr.employees as e on jh.employee_ID = e.employee_ID
+    join
+    hr.jobs as j on jh.job_ID = j.job_ID
+    join
+    hr.departments as d on jh.department_ID = d.department_ID
 ORDER BY `Nome Completo` DESC , `Cargo`;
