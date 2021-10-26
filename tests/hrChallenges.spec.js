@@ -2,7 +2,7 @@ const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
 const Importer = require('mysql-import');
 
-describe.skip('Desafios iniciais', () => {
+describe('Desafios iniciais', () => {
   let sequelize;
 
   beforeAll(async () => {
@@ -133,7 +133,7 @@ describe.skip('Desafios iniciais', () => {
     });
   });
 
-  describe.only('18 - Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo', () => {
+  describe('18 - Faça um relatório que mostra o **histórico de cargos das pessoas empregadas**, mostrando as datas de início e de saída, assim como os anos que ela ficou nesse cargo', () => {
     it('Verifica o desafio 18', async () => {
       const challengeQuery = readFileSync('desafio18.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult18');
@@ -142,7 +142,7 @@ describe.skip('Desafios iniciais', () => {
     });
   });
 
-  describe('19 - Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano', () => {
+  describe.only('19 - Crie uma função chamada `exibir_quantidade_pessoas_contratadas_por_mes_e_ano` no banco de dados `hr` que, dados o mês e ano como parâmetros nessa ordem, retorna a quantidade de pessoas funcionárias **que foram contratadas** nesse mês e ano', () => {
     it('Verifica o desafio 19', async () => {
       const challengeQuery = readFileSync('desafio19.sql', 'utf8').trim();
       const createFunctionQuery = /CREATE FUNCTION.*END/si.exec(challengeQuery)[0];
