@@ -10,5 +10,4 @@ ORDER BY
   `Nome completo` ASC,   
   `Anos trabalhados` ASC;
 
--- ref para pegar o '0' dos meses: https://stackoverflow.com/questions/7043794/get-mysql-month-to-use-leading-zeros
- 
+  -- ref para pegar o '0' dos meses: https://stackoverflow.com/questions/7043794/get-mysql-month-to-use-leading-zeros
