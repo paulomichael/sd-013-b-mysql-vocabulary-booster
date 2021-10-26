@@ -1,14 +1,12 @@
-SELECT employee_hire.full_name AS `Nome completo`,
+SELECT e.full_name AS `Nome completo`,
 j.job_title AS `Cargo`,
-employee_hire.hire_date AS `Data de início do cargo`,
+job_h.start_date AS `Data de início do cargo`,
 d.department_name AS `Departamento`
-FROM (SELECT CONCAT(first_name, ' ', last_name) as full_name, job_id, hire_date, department_id FROM hr.employees AS e
-WHERE EXISTS (
-SELECT * FROM hr.job_history
-WHERE employee_id = e.employee_id
-)) AS employee_hire
+FROM hr.job_history AS job_h
+JOIN (SELECT employee_id, CONCAT(first_name, ' ', last_name) AS full_name FROM hr.employees) AS e
+ON e.employee_id = job_h.employee_id
 JOIN hr.jobs AS j
-ON j.job_id = employee_hire.job_id
+ON j.job_id = job_h.job_id
 JOIN hr.departments AS d
-ON d.department_id = employee_hire.department_id
-ORDER BY employee_hire.full_name DESC, d.department_name ASC;
+ON d.department_id = job_h.department_id
+ORDER BY e.full_name DESC, d.department_name ASC;
