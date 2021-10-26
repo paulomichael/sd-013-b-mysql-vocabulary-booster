@@ -1,5 +1,6 @@
-SELECT Country FROM suppliers
+USE w3schools;
+SELECT Country AS 'País' FROM suppliers
 UNION
 SELECT Country FROM customers
-ORDER BY Country
+order by País
 LIMIT 10;
