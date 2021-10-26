@@ -1,20 +1,3 @@
-SET @table_employees_filtered = (SELECT 
-    CONCAT(empFinal.FIRST_NAME, ' ', empFinal.LAST_NAME) AS full_name,
-    empFinal.SALARY,
-    empFinal.PHONE_NUMBER,
-    empFinal.JOB_ID
-FROM
-    hr.employees AS empFinal
-WHERE
-    JOB_ID IN (SELECT 
-            empFiltered.JOB_ID
-        FROM
-            (SELECT 
-                emp.JOB_ID, COUNT(*) AS COUNTFunc
-            FROM
-                hr.employees AS emp
-            GROUP BY JOB_ID
-            HAVING COUNTFunc > 1) AS empFiltered));
 SELECT 
     t1.full_name AS `Nome completo funcionário 1`,
     t1.SALARY AS `Salário funcionário 1`,
