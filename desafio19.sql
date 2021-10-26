@@ -8,13 +8,14 @@ RETURNS INT READS SQL DATA
     
     SELECT 
       COUNT(EMPLOYEE_ID) AS `Total contratados`
-	FROM
+    FROM
       employees
-	WHERE
+    WHERE
       MONTH(HIRE_DATE) = mes AND YEAR(HIRE_DATE) = ano
-	INTO totalFuncionarios;
+    INTO totalFuncionarios;
     RETURN totalFuncionarios;
- END $$
- DELIMITER $$
- 
- SELECT exibir_quantidade_pessoas_contratadas_por_mes_e_ano(6, 1987);
+  END $$
+  DELIMITER $$
+  
+  SELECT exibir_quantidade_pessoas_contratadas_por_mes_e_ano(6, 1987);
+  
