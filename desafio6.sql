@@ -12,6 +12,3 @@ FROM
         INNER JOIN
     hr.departments AS D ON D.DEPARTMENT_ID = E.DEPARTMENT_ID
 ORDER BY `Nome Completo` DESC , `Cargo` ASC;
-select * from hr.jobs;
-select * from hr.job_history;
-select * from hr.employees;
