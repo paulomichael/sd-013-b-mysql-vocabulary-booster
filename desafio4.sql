@@ -12,4 +12,4 @@ FROM
         INNER JOIN
     hr.jobs AS J ON E.JOB_ID = J.JOB_ID
 GROUP BY J.JOB_TITLE
-ORDER BY AVG(E.SALARY) , 'Cargo';
+ORDER BY E.SALARY , 'Cargo';
