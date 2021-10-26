@@ -1,9 +1,19 @@
 SELECT
-em.FIRST_NAME,
-tb.same_job
+CONCAT(em.FIRST_NAME, ' ', em.LAST_NAME)
+as 'Nome completo funcionário 1',
+em.SALARY as 'Salário funcionário 1',
+em.PHONE_NUMBER as 'Telefone funcionário 1',
+CONCAT(em2.FIRST_NAME, ' ', em2.LAST_NAME)
+as 'Nome completo funcionário 2',
+em2.SALARY as 'Salário funcionário 2',
+em2.PHONE_NUMBER as 'Telefone funcionário 2'
 FROM hr.employees as em
 INNER JOIN (
-SELECT count(*) - 1 as same_job, JOB_ID FROM hr.employees
-GROUP BY JOB_ID
-) as tb ON em.JOB_ID = tb.JOB_ID
-WHERE tb.same_job > 0
+SELECT
+*
+FROM hr.employees
+) as em2
+ON em2.JOB_ID = em.JOB_ID AND em2.EMPLOYEE_ID != em.EMPLOYEE_ID
+ORDER
+BY CONCAT(em.FIRST_NAME, ' ', em.LAST_NAME) ASC,
+CONCAT(em2.FIRST_NAME, ' ', em2.LAST_NAME) ASC;
