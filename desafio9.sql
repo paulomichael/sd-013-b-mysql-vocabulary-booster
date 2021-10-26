@@ -4,6 +4,6 @@ SELECT
 FROM
     w3schools.orders AS o
         INNER JOIN
-    w3schools.employees AS e ON o.CustomerID = e.EmployeeID
+    w3schools.employees AS e ON o.EmployeeID = e.EmployeeID
 GROUP BY `Nome completo`
 ORDER BY `Total de pedidos` ASC;
