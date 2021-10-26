@@ -12,4 +12,4 @@ OR sp.ShipperName = "United Package"
 ORDER BY
 cs.ContactName ASC,
 sp.ShipperName ASC,
-od.OrderDate DESC;
+od.OrderDate ASC;
