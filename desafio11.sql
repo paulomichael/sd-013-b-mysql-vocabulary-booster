@@ -6,6 +6,6 @@ FROM
     w3schools.customers AS c1,
     w3schools.customers AS c2
 WHERE
-    c1.Country = c2.Country
-GROUP BY `Nome`
+    c1.Country = c2.Country AND c1.ContactName <> c2.ContactName
+GROUP BY `Nome`, `País`
 ORDER BY `Nome`;
