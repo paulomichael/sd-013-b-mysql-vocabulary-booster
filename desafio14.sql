@@ -1,5 +1,5 @@
 SELECT
-DISTINCT(tb.Country)
+DISTINCT(tb.Country) as "País"
 FROM (
 SELECT Country FROM w3schools.customers as cm
 UNION
