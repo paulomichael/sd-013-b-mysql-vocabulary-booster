@@ -7,4 +7,3 @@ WHEN AVG(e.SALARY) BETWEEN 7501 AND 10500 THEN 'Sênior'
 ELSE 'CEO'
 END AS 'Senioridade'
 FROM employees AS e INNER JOIN jobs as j ON e.JOB_ID = j.JOB_ID GROUP BY cargo ORDER BY AVG(e.SALARY), Cargo;
-
