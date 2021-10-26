@@ -9,4 +9,3 @@ WHERE C1.Country = C2.Country
 FROM customers C1
 HAVING `Número de compatriotas` <> 0
 ORDER BY `Nome`;
-
