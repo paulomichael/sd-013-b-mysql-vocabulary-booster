@@ -7,6 +7,6 @@ FROM
     w3schools.customers AS c2
 WHERE
     c1.Country = c2.Country
-GROUP BY c1.CustomerID
+GROUP BY c1.ContactName
 HAVING `Número de compatriotas` > 1
 ORDER BY `Nome`;
