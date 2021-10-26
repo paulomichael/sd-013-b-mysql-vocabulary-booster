@@ -1,4 +1,4 @@
-SELECT c1.CustomerName AS Nome, MAX(c1.Country) AS País, COUNT(c2.CustomerName) -1 AS "Número de compatriotas"
+SELECT c1.ContactName AS Nome, MAX(c1.Country) AS País, COUNT(c2.CustomerName) -1 AS "Número de compatriotas"
 FROM customers AS c1, customers AS c2 WHERE c2.Country = c1.Country
-GROUP BY c1.CustomerName
-ORDER BY MAX(c1.ContactName);
+GROUP BY c1.ContactName
+ORDER BY c1.ContactName;
