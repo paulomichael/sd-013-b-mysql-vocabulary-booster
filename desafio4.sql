@@ -1,12 +1,16 @@
 SELECT 
-    JOB_TITLE AS Cargo,
-    ROUND((MAX_SALARY + MIN_SALARY) / 2, 2) AS 'Média salarial',
-    CASE
-        WHEN (MAX_SALARY + MIN_SALARY) / 2 BETWEEN 2000 AND 5800 THEN 'Júnior'
-        WHEN (MAX_SALARY + MIN_SALARY) / 2 BETWEEN 5801 AND 7500 THEN 'Pleno'
-        WHEN (MAX_SALARY + MIN_SALARY) / 2 BETWEEN 7501 AND 10500 THEN 'Sênior'
-        WHEN (MAX_SALARY + MIN_SALARY) / 2 > 10500 THEN 'CEO'
-    END AS Nível
+    JOB_TITLE AS `Cargo`,
+    ROUND(AVG(E.SALARY), 2) AS `Média salarial`,
+	CASE
+        WHEN AVG(E.SALARY) BETWEEN 2000 AND 5800 THEN 'Júnior'
+        WHEN AVG(E.SALARY) BETWEEN 5801 AND 7500 THEN 'Pleno'
+        WHEN AVG(E.SALARY) BETWEEN 7501 AND 10500 THEN 'Sênior'
+        WHEN AVG(E.SALARY) > 10500 THEN 'CEO'
+    END AS `Senioridade`
 FROM
-    hr.jobs
+    hr.jobs AS J
+        JOIN
+    hr.employees AS E 
+		ON J.JOB_ID = E.JOB_ID
+GROUP BY `Cargo`
 ORDER BY `Média salarial` , `Cargo` ASC;
