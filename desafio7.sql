@@ -1,6 +1,6 @@
 SELECT
 upper(concat(em.FIRST_NAME, ' ', em.LAST_NAME)) as "Nome completo",
-jh.START_DATE as "Data de início do cargo",
+jh.START_DATE as "Data de início",
 em.SALARY as "Salário"
 FROM hr.employees as em
 INNER JOIN hr.job_history as jh
