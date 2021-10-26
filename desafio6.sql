@@ -9,4 +9,4 @@ JOIN hr.jobs AS j
 ON j.job_id = job_h.job_id
 JOIN hr.departments AS d
 ON d.department_id = job_h.department_id
-ORDER BY e.full_name DESC, d.department_name ASC;
+ORDER BY e.full_name DESC, j.job_title ASC;
