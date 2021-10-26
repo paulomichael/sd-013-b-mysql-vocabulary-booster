@@ -7,5 +7,5 @@ FROM
     w3schools.customers AS c2
 WHERE
     c1.Country = c2.Country
-GROUP BY c1.ContactName
-ORDER BY Nome;
+GROUP BY `Nome`
+ORDER BY `Nome`;
