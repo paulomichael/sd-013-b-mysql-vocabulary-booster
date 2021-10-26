@@ -1,15 +1,7 @@
-use hr;
-
 SELECT 
-JOB_TITLE AS 'Cargo',
-ROUND(AVG(SALARY), 2) AS 'Média Salarial',
-CASE
-WHEN ROUND(AVG(SALARY), 2) BETWEEN 2000 AND 5800 THEN 'Júnior'
-WHEN ROUND(AVG(SALARY), 2) BETWEEN 5801 AND 7500 THEN 'Pleno'
-WHEN ROUND(AVG(SALARY), 2) BETWEEN 7501 AND 10500 THEN 'Sênior'
-WHEN ROUND(AVG(SALARY), 2) > 10500 THEN 'CEO'
-END AS 'Senioridade'
-FROM
-hr.employees
-GROUP BY `Cargo`
-ORDER BY `Média Salarial` ASC, `Cargo` ASC;
+    JOB_TITLE AS 'Cargo',
+    (MAX_SALARY - MIN_SALARY) AS 'Variação Salarial',
+ROUND((MIN_SALARY / 12), 2) AS `Média mínima mensal`,
+ROUND((MAX_SALARY / 12), 2) AS `Média máxima mensal`
+FROM hr.jobs
+ORDER BY `Variação Salarial`, JOB_TITLE;
