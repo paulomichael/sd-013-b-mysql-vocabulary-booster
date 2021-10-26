@@ -8,4 +8,4 @@ ON jh.EMPLOYEE_ID = em.EMPLOYEE_ID
 WHERE month(jh.START_DATE) BETWEEN 1 AND 3
 ORDER BY
 concat(em.FIRST_NAME, ' ', em.LAST_NAME) asc,
-em.HIRE_DATE desc;
+jh.START_DATE asc;
