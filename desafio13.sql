@@ -7,3 +7,4 @@ FROM
         AND OD.Quantity > 80
         ORDER BY `Produto`, `Preço`;
         
+        
