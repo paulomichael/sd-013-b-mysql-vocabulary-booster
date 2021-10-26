@@ -16,7 +16,7 @@ FROM
         FROM
             hr.jobs
         WHERE
-            JOB_TITLE = 'Programmer')) AS salary_employees;
+            JOB_TITLE = title)) AS salary_employees;
 END $$
 
 DELIMITER ;
