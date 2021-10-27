@@ -7,8 +7,7 @@ FROM
         JOIN
     w3schools.orders AS o ON c.CustomerID = o.CustomerID
         JOIN
-    w3schools.shippers AS s ON o.ShipperID
+    w3schools.shippers AS s ON s.ShipperID = o.ShipperID
 WHERE
-    s.ShipperName = 'Speedy Express'
-        OR s.ShipperName = 'United Package'
+    s.ShipperName in ('Speedy Express', 'United Package')
 ORDER BY `Nome de contato` , `Empresa que fez o envio` , `Data do pedido`;
