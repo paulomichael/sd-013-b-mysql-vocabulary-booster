@@ -9,4 +9,3 @@ FROM
 WHERE
     MONTH(jh.START_DATE) <= 3
 ORDER BY `Nome completo`;
-
