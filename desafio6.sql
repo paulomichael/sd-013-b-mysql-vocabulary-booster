@@ -10,5 +10,5 @@ FROM
         INNER JOIN
     hr.jobs AS jo ON jh.JOB_ID = jo.JOB_ID
         INNER JOIN
-    hr.departments AS de ON em.DEPARTMENT_ID = de.DEPARTMENT_ID
+    hr.departments AS de ON jh.DEPARTMENT_ID = de.DEPARTMENT_ID
 ORDER BY `Nome completo` DESC , `Cargo`;
