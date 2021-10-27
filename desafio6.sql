@@ -5,8 +5,8 @@ SELECT
     de.DEPARTMENT_NAME AS 'Departamento'
 FROM
     hr.employees AS em
-		    INNER JOIN
-  	hr.job_history AS jh ON jh.EMPLOYEE_ID = em.EMPLOYEE_ID
+        INNER JOIN
+    hr.job_history AS jh ON jh.EMPLOYEE_ID = em.EMPLOYEE_ID
         INNER JOIN
     hr.jobs AS jo ON em.JOB_ID = jo.JOB_ID
         INNER JOIN
