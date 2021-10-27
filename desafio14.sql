@@ -8,4 +8,3 @@ Country as `País`
     w3schools.suppliers
     order by `País`
     limit 5;
-    
