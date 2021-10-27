@@ -7,7 +7,7 @@ FROM
   INNER JOIN w3schools.customers AS CUSTOMERS ON ORDERS.CustomerID = CUSTOMERS.CustomerID
   INNER JOIN w3schools.shippers AS SHIPPERS ON ORDERS.ShipperID = SHIPPERS.ShipperID
 WHERE
-  ORDERS.ShipperID IN ('1', '2')
+  SHIPPERS.ShipperName IN ('Speedy Express', 'United Package')
 ORDER BY
   `Nome de Contato`,
   `Empresa que fez o envio`,
