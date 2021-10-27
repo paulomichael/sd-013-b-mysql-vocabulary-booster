@@ -11,7 +11,7 @@ FROM
 WHERE
     MONTH(HIRE_DATE) = mes
         AND YEAR(HIRE_DATE) = ano INTO quantidade;
-RETURN quantidate;
+RETURN quantidade;
 END $$
 
 DELIMITER ;
