@@ -1,5 +1,5 @@
 select
-	Country as `País`
+Country as `País`
     from 
     w3schools.customers
     union select
