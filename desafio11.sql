@@ -6,7 +6,8 @@ SELECT
         FROM
             w3schools.customers
         WHERE
-            País = Country) AS `Número de compatriotas`
+            `País` = Country) AS `Número de compatriotas`
 FROM
     w3schools.customers
-ORDER BY `Nome`;
+ORDER BY `Nome`
+LIMIT 90;
