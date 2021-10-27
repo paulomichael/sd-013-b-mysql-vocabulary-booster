@@ -2,7 +2,7 @@ const { readFileSync } = require('fs');
 const { Sequelize } = require('sequelize');
 const Importer = require('mysql-import');
 
-describe.skyp('Desafios iniciais', () => {
+describe('Desafios iniciais', () => {
   let sequelize;
 
   beforeAll(async () => {
@@ -29,7 +29,7 @@ describe.skyp('Desafios iniciais', () => {
     sequelize.close();
   });
 
-  describe('8 - Exibe todas as **pessoas consumidoras** cujos pedidos já foram enviados pelas empresas `Speedy Express` ou `United Package`', () => {
+  describe.only('8 - Exibe todas as **pessoas consumidoras** cujos pedidos já foram enviados pelas empresas `Speedy Express` ou `United Package`', () => {
     it('Verifica o desafio 8', async () => {
       const challengeQuery = readFileSync('desafio8.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult8');
@@ -38,7 +38,7 @@ describe.skyp('Desafios iniciais', () => {
     });
   });
 
-  describe('9 - Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos', () => {
+  describe.only('9 - Exibe todos as pessoas funcionárias que já realizaram algum pedido, mostrando também seu total de pedidos feitos', () => {
     it('Verifica o desafio 9', async () => {
       const challengeQuery = readFileSync('desafio9.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult9');
@@ -47,7 +47,7 @@ describe.skyp('Desafios iniciais', () => {
     });
   });
 
-  describe('10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
+  describe.only('10 - Exibe todos os produtos que já foram pedidos, que possuem uma média de quantidade nos pedidos registrados acima de `20.00`', () => {
     it('Verifica o desafio 10', async () => {
       const challengeQuery = readFileSync('desafio10.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult10');
