@@ -6,4 +6,3 @@ UNION ALL
 ORDER BY País
 LIMIT 5;
 
-

@@ -11,5 +11,3 @@ FROM
     w3schools.order_details AS o ON o.ProductID = p.ProductID
 GROUP BY Produto WHERE Média > 20
 ORDER BY Média, Produto;
-
-

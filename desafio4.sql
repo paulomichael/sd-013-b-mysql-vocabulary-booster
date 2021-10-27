@@ -8,8 +8,3 @@ SELECT JOB_TITLE AS 'Cargo' , ROUND((MAX_SALARY + MIN_SALARY)/ 2, 2)  AS 'Média
     END AS Senioridade
     FROM hr.jobs
     ORDER BY ROUND((MAX_SALARY + MIN_SALARY)/ 2, 2), JOB_TITLE;
-    
-
-
-   
-   

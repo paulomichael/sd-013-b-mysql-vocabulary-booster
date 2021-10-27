@@ -4,4 +4,3 @@ SELECT JOB_TITLE,
     FROM hr.jobs
     ORDER BY MAX_SALARY - MIN_SALARY, JOB_TITLE;
     
-    
