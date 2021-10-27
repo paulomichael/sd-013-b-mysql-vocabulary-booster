@@ -10,5 +10,5 @@ FROM
     hr.employees AS em2
 WHERE
     em1.job_id = em2.job_id
-        AND em1.employee_id != em2.employee_id
+        AND em1.employee_id <> em2.employee_id
 ORDER BY `Nome completo funcionário 1` , `Nome completo funcionário 2`;
