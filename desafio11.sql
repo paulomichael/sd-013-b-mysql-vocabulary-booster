@@ -6,7 +6,7 @@ FROM
     w3schools.customers AS c1,
     w3schools.customers AS c2
 WHERE
-    c2.Country = c1.Country
-GROUP BY c1.CustomerID
+    c1.Country = c2.Country
+GROUP BY `Nome`
 HAVING `Número de compatriotas` > 1
 ORDER BY `Nome`;
