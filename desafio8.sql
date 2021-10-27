@@ -11,4 +11,3 @@ FROM
 WHERE
     ShipperName = 'Speedy Express'
         OR ShipperName = 'United Package';
-        
