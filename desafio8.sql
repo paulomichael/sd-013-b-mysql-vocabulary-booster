@@ -10,4 +10,5 @@ FROM
     w3schools.shippers AS shi ON shi.ShipperID = ord.ShipperID
 WHERE
     ShipperName = 'Speedy Express'
-        OR ShipperName = 'United Package';
+        OR ShipperName = 'United Package'
+ORDER BY `Nome de contato`, `Data do pedido`;
