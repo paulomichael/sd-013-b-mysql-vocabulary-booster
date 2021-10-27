@@ -4,10 +4,10 @@ SELECT
   ORDERS.OrderDate AS `Data do pedido`
 FROM
   w3schools.orders AS ORDERS
-  INNER JOIN w3schools.customers AS CUSTOMERS ON CUSTOMERS.CustomerID = ORDERS.CustomerID
-  INNER JOIN w3schools.shippers AS SHIPPERS ON SHIPPERS.ShipperID = ORDERS.ShipperID
+  INNER JOIN w3schools.customers AS CUSTOMERS ON ORDERS.CustomerID = CUSTOMERS.CustomerID
+  INNER JOIN w3schools.shippers AS SHIPPERS ON ORDERS.ShipperID = SHIPPERS.ShipperID
 WHERE
-  SHIPPERS.ShipperName IN ('Speedy Express', 'United Package')
+  ORDERS.ShipperID IN ('1', '2')
 ORDER BY
   `Nome de Contato`,
   `Empresa que fez o envio`,
