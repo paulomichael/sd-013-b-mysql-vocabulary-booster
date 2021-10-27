@@ -1,5 +1,5 @@
 SELECT
-    MAX(c1.CustomerID)
+    MAX(c1.CustomerID),
     c1.ContactName AS `Nome`,
     c1.Country AS 'País',
     COUNT(c1.Country) - 1 AS `Número de compatriotas`
