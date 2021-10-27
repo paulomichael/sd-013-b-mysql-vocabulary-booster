@@ -4,7 +4,9 @@ SELECT JOB_TITLE,
       WHEN MAX_SALARY BETWEEN 10001 AND 20000 THEN 'Médio'
       WHEN MAX_SALARY BETWEEN 20001 AND 30000 THEN 'Alto'
       WHEN MAX_SALARY > 30000 THEN 'Altíssimo'
-   END AS Nível
-   FROM hr.jobs
-   ORDER BY JOB_TITLE;
-   
+    END AS Nível
+    FROM hr.jobs
+    ORDER BY JOB_TITLE;
+    
+
+

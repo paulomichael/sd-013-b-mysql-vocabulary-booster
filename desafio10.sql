@@ -12,3 +12,4 @@ FROM
 GROUP BY Produto WHERE Média > 20
 ORDER BY Média, Produto;
 
+
